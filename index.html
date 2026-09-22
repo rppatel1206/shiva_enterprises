@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shiva Enterprises | Nerolac Paints | Khirkiya, Harda</title>
+  <meta
+    name="description"
+    content="Shiva Enterprises - Nerolac Paints, primers, putty, waterproofing and paint accessories near Girl School, Main Road, Khirkiya, Harda."
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f7f8fc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      max-width: 1150px;
+      margin: auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #e31b23, #ff8a00);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 23px;
+    }
+
+    .logo h2 {
+      font-size: 19px;
+      color: #d71920;
+    }
+
+    .logo p {
+      font-size: 12px;
+      color: #666;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 22px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #d71920;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 610px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(20,20,30,0.88), rgba(20,20,30,0.35)),
+        linear-gradient(135deg, #e31b23, #ff9d00);
+      color: white;
+    }
+
+    .hero-container {
+      max-width: 1150px;
+      width: 100%;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 14px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      display: block;
+      font-size: clamp(28px, 4vw, 43px);
+      color: #ffd86b;
+      margin-top: 8px;
+    }
+
+    .hero h3 {
+      font-size: 21px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      max-width: 650px;
+      color: #f1f1f1;
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #d71920;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* COMMON */
+    section {
+      padding: 75px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading small {
+      color: #d71920;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-heading h2 {
+      font-size: 34px;
+      margin-top: 7px;
+    }
+
+    .section-heading p {
+      color: #666;
+      max-width: 650px;
+      margin: 10px auto 0;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    .about-box h2 {
+      color: #d71920;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .owners {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .owner {
+      background: #fff4f4;
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1;
+    }
+
+    .owner strong {
+      display: block;
+      color: #d71920;
+    }
+
+    .paint-art {
+      min-height: 330px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #ff3b30, #ffcc00, #2196f3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .paint-art::before,
+    .paint-art::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+    }
+
+    .paint-art::before {
+      width: 240px;
+      height: 240px;
+      right: -70px;
+      top: -70px;
+    }
+
+    .paint-art::after {
+      width: 190px;
+      height: 190px;
+      left: -60px;
+      bottom: -50px;
+    }
+
+    .paint-art-content {
+      position: absolute;
+      z-index: 2;
+      left: 30px;
+      bottom: 30px;
+      color: white;
+    }
+
+    .paint-art-content h2 {
+      font-size: 38px;
+    }
+
+    /* PRODUCTS */
+    .products {
+      background: #fff;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #f8f9fc;
+      padding: 25px 20px;
+      border-radius: 15px;
+      border: 1px solid #eee;
+      transition: 0.25s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .product-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 12px;
+      background: #fff0f0;
+      color: #d71920;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .product-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* BRAND */
+    .brand-section {
+      background: #f5f6fa;
+    }
+
+    .brand-box {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    .brand-text h2 {
+      font-size: 36px;
+      color: #d71920;
+    }
+
+    .brand-text p {
+      color: #555;
+      max-width: 650px;
+      margin-top: 10px;
+    }
+
+    .brand-mark {
+      min-width: 180px;
+      height: 120px;
+      border-radius: 15px;
+      background: #d71920;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* WHY US */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid #eee;
+    }
+
+    .why-card .icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #171a21;
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+
+    .contact-info h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+      color: #c8c8c8;
+      margin-bottom: 25px;
+    }
+
+    .contact-item {
+      margin: 18px 0;
+    }
+
+    .contact-item span {
+      color: #ffb000;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .quote-box {
+      background: white;
+      color: #222;
+      padding: 30px;
+      border-radius: 18px;
+    }
+
+    .quote-box h3 {
+      margin-bottom: 20px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+      border-radius: 7px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .quote-btn {
+      width: 100%;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      background: #25d366;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0d0f13;
+      color: #aaa;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+      z-index: 2000;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+      nav {
+        display: none;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 520px) {
+      section {
+        padding: 55px 15px;
+      }
+
+      .hero-container {
+        padding: 55px 18px;
+      }
+
+      .hero {
+        min-height: 580px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .product-card {
+        padding: 18px 14px;
+      }
+
+      .owners {
+        flex-direction: column;
+      }
+
+      .about-box {
+        padding: 25px;
+      }
+
+      .brand-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+
+      <div class="logo">
+        <div class="logo-icon">🎨</div>
+        <div>
+          <h2>शिवा एंटरप्राइजेज</h2>
+          <p>Shiva Enterprises</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-container">
+
+      <div class="hero-content">
+
+        <div class="badge">
+          🎨 Paints • Putty • Primer • Waterproofing • Hardware
+        </div>
+
+        <h1>
+          Shiva Enterprises
+          <span>शिवा एंटरप्राइजेज</span>
+        </h1>
+
+        <h3>Nerolac Paints & Complete Paint Solutions</h3>
+
+        <p>
+          आपके घर, दुकान और नए निर्माण के लिए गुणवत्तापूर्ण
+          Paints, Primers, Putty, Waterproofing और Painting Accessories.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="tel:9669262557">
+            📞 Call Now
+          </a>
+
+          <a
+            class="btn btn-whatsapp"
+            href="https://wa.me/919669262557?text=Hello%20Shiva%20Enterprises,%20I%20want%20to%20know%20about%20paint%20products."
+            target="_blank"
+          >
+            💬 WhatsApp
+          </a>
+
+          <a class="btn btn-outline" href="#products">
+            View Products
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <small>About Us</small>
+        <h2>आपका भरोसेमंद Paint Store</h2>
+        <p>
+          Khirkiya और आसपास के ग्राहकों के लिए Paint और
+          painting-related products.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-box">
+
+          <h2>शिवा एंटरप्राइजेज</h2>
+
+          <p>
+            Shiva Enterprises में आपको घर और commercial projects
+            के लिए विभिन्न प्रकार के Paints और संबंधित products
+            मिल सकते हैं।
+          </p>
+
+          <p>
+            हमारी मुख्य product range में Nerolac Paints के साथ
+            Interior Paints, Exterior Paints, Primer, Putty,
+            Enamel और Waterproofing products शामिल हैं।
+          </p>
+
+          <div class="owners">
+
+            <div class="owner">
+              <strong>Anand Rajput</strong>
+              Shiva Enterprises
+            </div>
+
+            <div class="owner">
+              <strong>Antim Rajput</strong>
+              Shiva Enterprises
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="paint-art">
+
+          <div class="paint-art-content">
+            <h2>Paint Your<br />Dream Home</h2>
+            <p>Quality Paint Solutions</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <small>Our Products</small>
+        <h2>Paint & Hardware Products</h2>
+        <p>
+          आपके painting और construction requirements के लिए
+          विभिन्न product categories.
+        </p>
+      </div>
+
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-icon">🏠</div>
+          <h3>Interior Paints</h3>
+          <p>
+            घर के अंदर की दीवारों के लिए विभिन्न प्रकार के
+            decorative paints.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">🏢</div>
+          <h3>Exterior Paints</h3>
+          <p>
+            Exterior walls और building surfaces के लिए
+            paint solutions.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">🪣</div>
+          <h3>Primer</h3>
+          <p>
+            Painting से पहले surface preparation के लिए
+            primers.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">🎨</div>
+          <h3>Wall Putty</h3>
+          <p>
+            Smooth और बेहतर wall finishing के लिए putty products.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">🔧</div>
+          <h3>Enamel Paints</h3>
+          <p>
+            Metal और अन्य surfaces के लिए enamel paint solutions.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">💧</div>
+          <h3>Waterproofing</h3>
+          <p>
+            Leakage और moisture protection के लिए waterproofing
+            products.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">🖌️</div>
+          <h3>Brushes & Rollers</h3>
+          <p>
+            Painting के लिए brushes, rollers और accessories.
+          </p>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-icon">🔨</div>
+          <h3>Hardware Products</h3>
+          <p>
+            Painting और construction requirements के लिए
+            selected hardware products.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEROLAC -->
+  <section class="brand-section">
+
+    <div class="container">
+
+      <div class="brand-box">
+
+        <div class="brand-text">
+
+          <small>MAIN BRAND</small>
+
+          <h2>Nerolac Paints</h2>
+
+          <p>
+            Shiva Enterprises में Nerolac Paints की उपलब्ध
+            product range के बारे में जानकारी और quotation
+            के लिए हमसे संपर्क करें।
+          </p>
+
+          <br />
+
+          <a href="#contact" class="btn btn-primary"
+             style="background:#d71920;color:white;">
+            Get Product Details
+          </a>
+
+        </div>
+
+        <div class="brand-mark">
+          NEROLAC<br />
+          PAINTS
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY US -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+        <small>Why Shiva Enterprises</small>
+        <h2>हमसे क्यों खरीदें?</h2>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="icon">🎨</div>
+          <h3>Paint Range</h3>
+          <p>
+            Interior, Exterior, Primer, Putty और अन्य paint products.
+          </p>
+        </div>
+
+
+        <div class="why-card">
+          <div class="icon">💬</div>
+          <h3>Easy Enquiry</h3>
+          <p>
+            WhatsApp या phone पर अपनी requirement भेजें।
+          </p>
+        </div>
+
+
+        <div class="why-card">
+          <div class="icon">📍</div>
+          <h3>Local Store</h3>
+          <p>
+            Main Road, Khirkiya में आसानी से पहुंचने वाला local store.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <h2>Contact Us</h2>
+
+          <p>
+            Paint products, price और availability के लिए
+            हमें call या WhatsApp करें।
+          </p>
+
+
+          <div class="contact-item">
+            <span>📞 Phone / WhatsApp</span>
+            <a href="tel:9669262557">
+              96692 62557
+            </a>
+          </div>
+
+
+          <div class="contact-item">
+            <span>👤 Owners</span>
+            Anand Rajput & Antim Rajput
+          </div>
+
+
+          <div class="contact-item">
+            <span>📍 Address</span>
+            Near Girl School, Main Road,<br />
+            Khirkiya, Harda, Madhya Pradesh
+          </div>
+
+
+          <div class="buttons">
+
+            <a
+              class="btn btn-whatsapp"
+              href="https://wa.me/919669262557?text=Hello%20Shiva%20Enterprises,%20I%20need%20paint%20products."
+              target="_blank"
+            >
+              💬 Chat on WhatsApp
+            </a>
+
+            <a
+              class="btn btn-primary"
+              href="https://www.google.com/maps/search/?api=1&query=Girl+School+Main+Road+Khirkiya+Harda+Madhya+Pradesh"
+              target="_blank"
+            >
+              📍 Open Maps
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- QUOTE FORM -->
+        <div class="quote-box">
+
+          <h3>Get a Quick Quote</h3>
+
+          <form id="quoteForm">
+
+            <input
+              type="text"
+              id="customerName"
+              placeholder="Your Name"
+              required
+            />
+
+            <input
+              type="tel"
+              id="customerPhone"
+              placeholder="Mobile Number"
+              required
+            />
+
+            <select id="product">
+              <option value="">Select Product</option>
+              <option>Interior Paint</option>
+              <option>Exterior Paint</option>
+              <option>Primer</option>
+              <option>Wall Putty</option>
+              <option>Enamel Paint</option>
+              <option>Waterproofing</option>
+              <option>Brush / Roller</option>
+              <option>Other</option>
+            </select>
+
+            <textarea
+              id="message"
+              placeholder="Tell us your requirement..."
+            ></textarea>
+
+            <button class="quote-btn" type="submit">
+              💬 Send Enquiry on WhatsApp
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 <strong>Shiva Enterprises</strong> —
